@@ -1,0 +1,29 @@
+.viewslots-container {
+    padding: 24px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .viewslots-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .viewslots-badge {
+    background-color: #6c63ff;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+  
+  .viewslots-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  

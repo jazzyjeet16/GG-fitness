@@ -1,0 +1,209 @@
+.slotmodal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  
+  .slotmodal-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 1152px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .slotmodal-close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+    color: #9ca3af;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slotmodal-close-button:hover {
+    color: #374151;
+  }
+  
+  .slotmodal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .slotmodal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slotmodal-card {
+    display: flex;
+    gap: 32px;
+    width: 1080px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .slotmodal-calendar {
+    width: 476px;
+  }
+  
+  .slotmodal-section-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  .slotmodal-datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px 12px;
+    margin-bottom: 4px;
+  }
+  
+  .slotmodal-chevron {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+  
+  .slotmodal-chevron:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .slotmodal-month-label {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #222;
+  }
+  
+  .slotmodal-day {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .slot-available {
+    color: green;
+  }
+  
+  .slot-unavailable {
+    color: red;
+  }
+  
+  .slot-past {
+    color: #a1a1aa;
+    text-decoration: line-through;
+  }
+  
+  .slot-selected {
+    background-color: #6C1CD2 !important;
+    color: white !important;
+    border-radius: 9999px;
+  }
+  
+  .slot-hover:hover {
+    background-color: #f6f1ff;
+    border-radius: 9999px;
+  }
+  
+  .slotmodal-divider {
+    width: 1px;
+    background-color: #e7e7e7;
+  }
+  
+  .slotmodal-times {
+    flex: 1;
+  }
+  
+  .slotmodal-times-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 24px;
+  }
+  
+  .slotmodal-time-btn {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid #e0d7f8;
+    background-color: #f6f1ff;
+    color: #6c1cd2;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .slotmodal-time-btn:hover {
+    background-color: #e8d9ff;
+  }
+  
+  .slotmodal-time-btn.active {
+    border: 2px solid #6c1cd2;
+    background-color: #f6f1ff;
+    color: #6c1cd2;
+    box-shadow: 0 0 0 2px rgba(108, 28, 210, 0.3);
+  }
+  
+  .slotmodal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  
+  .slotmodal-cancel {
+    padding: 8px 24px;
+    width: 108px;
+    height:56px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .slotmodal-cancel:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .slotmodal-save {
+    padding: 8px 24px;
+     width: 108px;
+    height:56px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .slotmodal-save:hover {
+    background-color: #5b21b6;
+  }
+  

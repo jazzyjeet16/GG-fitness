@@ -1,0 +1,437 @@
+.homePage-main-container{
+    margin-top: 35vh;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 150px 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* margin-left: 2%; */
+}
+
+.image-section {
+  position: relative;
+  flex: 1;
+  max-width: 552px;
+}
+
+.trainer-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  /* bottom: 0px; */
+  top: 505px;
+  left: 350px;
+  background-color: #0A0015;
+  color: white;
+  padding: 25px 50px;
+  border-radius: 8px;
+  text-align: center;
+  /* max-width: 395px; */
+}
+
+.experience-badge h2 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.experience-badge p {
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  /* text-decoration: none; */
+}
+
+.content-section {
+  flex: 2;
+  max-width: 680px;
+  margin-top: 45px
+}
+.content-section h2{
+      background: linear-gradient(90deg, #0D0D0D 10%, #6600CC 35%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: 'League Spartan';
+}
+.content-section span{
+       background: linear-gradient(90deg, #0D0D0D 10%, #6600CC 65%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-style: 'League Spartan';
+}
+.about-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #343434;
+}
+.mvv-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 10px;
+  position: relative;
+  margin-top: -12vh;
+  background-image: url('/misson-bg.png');
+}
+
+.mvv-overlay {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: transparent; /* semi-transparent overlay */
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  flex-wrap: wrap;
+}
+
+.mvv-box {
+  flex: 1;
+  min-width: 280px;
+  border-right: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.mvv-box:last-child {
+  border-right: none;
+}
+
+.mvv-number {
+  font-size: 150px;
+  color: #0E0E0E26;
+  font-weight: bold;
+  margin-right: 10px;
+  font-weight: 700;
+  line-height: 180px;
+
+}
+
+.mvv-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0D0D0D;
+  line-height: 50px;
+}
+
+.mvv-box p,
+.mvv-box ul {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.6;
+  margin-top: 10px;
+  font: 400;
+  font-family: 'Albert Sans';
+}
+
+.mvv-box ul {
+  padding-left: 20px;
+}
+
+.mvv-box ul li {
+  margin-bottom: 8px;
+}
+.why-container {
+  padding: 0px 80px;
+  text-align: center;
+  
+}
+
+.why-heading {
+      background: linear-gradient(90deg, #0D0D0D 30%, #6600CC 70%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+  font-style: 'League Spartan';
+}
+
+
+
+.why-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.why-column {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 25px;
+  /* margin: 25px; */
+}
+
+.why-box {
+  text-align: left;
+}
+
+.why-box h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #0D0D0D;
+}
+
+.why-box p {
+  font-size: 14px;
+  color: #343434;
+  line-height: 1.6;
+  font-family: 'Albert Sans';
+}
+.why-image{
+padding-left: 25px;
+padding-right: 25px;
+
+}
+.why-image img {
+ width: 100%;
+  max-height: 500px; /* Increased height */
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  align-items: stretch;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.faq-left {
+flex: 1.2;
+  min-width: 300px;
+  padding-right: 40px;
+  padding-top: 0px;
+}
+
+.faq-heading {
+  background: linear-gradient(125deg, #0D0D0D 10%, #6600CC 18%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: 'League Spartan';
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+
+}
+
+
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    border-bottom: 1px solid #EAEAEA;
+
+}
+
+.faq-item {
+  /* background: white; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.05); */
+  padding: 35px 0px;
+  padding-top: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* border: 1px solid #eee; */
+    border-bottom: 1px solid #EAEAEA;
+    /* border-top: 1px solid #ddd; */
+
+
+}
+
+.faq-item:hover {
+  /* background-color: #faf7ff; */
+}
+
+.faq-item.open {
+  /* border-left: 4px solid #6a0dad; */
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color:#0D0D0D;
+}
+
+.faq-answer {
+  font-size: 14px;
+  color: #343434;
+  line-height: 1.6;
+  margin-top: 12px;
+  font-style: "Albert Sans";
+}
+
+.faq-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  margin-left: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-right img {
+  width: 100%;
+  max-width: 626px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+  }
+
+  .faq-left {
+    padding-right: 0;
+  }
+
+  .faq-right {
+    margin-top: 30px;
+  }
+
+  .faq-right img {
+    max-width: 100%;
+  }
+}
+
+
+
+.contact-container {
+  padding: 0px 0px;
+  max-width: 1320px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-heading {
+     background: linear-gradient(90deg, #0D0D0D 30%, #6600CC 70%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: 'League Spartan';
+    border-bottom: 1.5px solid #EAEAEA;
+    padding-bottom: 25px;
+
+}
+
+
+
+.contact-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.form-subheading {
+  font-size: 16px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.input-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.form-group label {
+    
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group label span {
+  color: red;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 18px 16px;
+  border: none;
+  background-color: #F8F8F8;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+
+.full-width {
+  flex: 1 1 100%;
+  margin-top: 20px;
+}
+
+.submit-button {
+  margin-top: 30px;
+  padding: 18px 40px;
+  background-color: #6600CC;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size:20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5700b2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .input-grid {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+}

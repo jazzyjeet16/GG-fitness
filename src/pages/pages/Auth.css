@@ -1,0 +1,83 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .auth-tab-bar {
+    display: flex;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border-bottom: 1px solid #e5e7eb;
+    width: 100%;
+    max-width: 558px;
+    justify-content: space-between;
+  }
+  
+  .auth-tab {
+    width: 50%;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-tab.active {
+    color: black;
+  }
+  
+  .auth-tab.inactive {
+    color: #6b7280; /* gray-500 */
+  }
+  
+  .auth-tab-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #9333ea; /* purple-600 */
+    transition: transform 0.3s ease;
+  }
+  
+  .auth-tab-indicator.right {
+    transform: translateX(100%);
+  }
+  
+  .auth-tab-indicator.left {
+    transform: translateX(0%);
+  }
+  
+  .auth-form-slider-wrapper {
+    width: 100%;
+    max-width: 558px;
+    overflow: hidden;
+  }
+  
+  .auth-form-slider {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .auth-form-slider.slide-login {
+    transform: translateX(0%);
+  }
+  
+  .auth-form-slider.slide-register {
+    transform: translateX(-50%);
+  }
+  
+  .auth-form {
+    width: 50%;
+    padding: 0 0.5rem;
+  }
+  

@@ -1,0 +1,273 @@
+/* layout */
+.checkout {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  font-family: "Inter", sans-serif;
+  align-items: flex-start;
+}
+
+.checkout-left {
+  /* background: #fff; */
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+.checkout-left h2{
+color: #0D0D0D;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+}
+.checkout-right{
+    border-radius: 12px;
+  padding: 1.75rem;
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); */
+  border: 1px solid #ECECEC;
+}
+.checkout-left {
+  flex: 1;
+}
+.checkout-right {
+  width: 340px;
+}
+
+h2,
+h3 {
+  margin: 0 0 1rem;
+}
+h4 {
+  margin: 0 0 0.75rem;
+}
+
+/* ───────────── card wrapper (left) */
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+.card h4{
+  color: #0D0D0D;
+  font-weight: 600;
+
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1rem;
+  padding: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2F2F2F;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input {
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+ background-color: #F8F8F8;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  border-color: #7a5af8;
+}
+
+/* ───────────── payment options */
+.pay-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: 1px solid #ECECEC ;
+  padding: 20px;
+  border-radius: 16px;
+}
+.pay-box:active{
+  border: none;
+}
+.pay-option input {
+  accent-color: #7a5af8;
+}
+
+.pay-box {
+  border-left: 3px solid #7a5af8;
+  padding: 1rem 1rem 1rem 1.25rem;
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1rem;
+  /* background: #fafafa; */
+  border-radius: 8px;
+}
+
+/* ───────────── coupon */
+.coupon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0.7rem;
+  font-weight: 500;
+}
+.details h4{
+  color: #0D0D0D;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.coupon-row button {
+  background: none;
+  border: none;
+  color: #6600CC;
+  font-weight: 600;
+  cursor: pointer;
+}
+.coupon-input {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+/* ───────────── RIGHT: review list */
+.item-count {
+  color: #777;
+  font-size: 0.85rem;
+  margin-left: 0.45rem;
+}
+
+.review-item {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 1.25rem;
+}
+
+.review-item img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.check-review{
+  font-size: 10px;
+  font-weight: 400;
+  color: #2F2F2F;
+}
+.details {
+  flex: 1;
+}
+.actions button{
+  height: 24px;
+  width: 24px;
+}
+.tag-wrap {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 0.55rem;
+  padding: 0.18rem 0.35rem;
+  border-radius: 4px;
+  color: #fff;
+}
+.tag-live {
+  background: #6c5ce7;
+}
+.tag-resource {
+  background: #0abde3;
+}
+.tag-schedule {
+  background: #ffb400;
+}
+.tag-fixed {
+  background: #e17055;
+}
+.tag-default {
+  background: #636e72;
+}
+
+
+.rating {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.review {
+  margin-left: 0.25rem;
+  color: #777;
+}
+.actions button img {
+  width: 24px;
+  height: 24px;
+}
+
+.price {
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+}
+.old {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 0.3rem;
+}
+.new {
+  font-weight: 600;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 0.3rem;
+}
+
+/* ───────────── summary */
+.summary {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.35rem 0;
+}
+.row.total {
+  font-weight: 700;
+}
+hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0.75rem 0;
+}
+
+.terms {
+  font-size: 0.72rem;
+  color: #777;
+  margin: 1rem 0;
+}
+
+.proceed {
+  width: 100%;
+  padding: 0.8rem 0;
+  background: #6600CC;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

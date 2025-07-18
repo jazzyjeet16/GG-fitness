@@ -1,0 +1,86 @@
+/* TopCourses.css */
+
+.top-courses-section {
+  padding: 0px 40px;
+  /* background: #fff; */
+  margin-top: 5vh;
+}
+
+.top-courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3vh;
+  margin-top: 15vh;
+  /* margin-bottom: 15vh; */
+}
+
+.top-courses-header h2 {
+ background: linear-gradient(90deg, #0D0D0D 30%, #6600CC 70%); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: 'League Spartan';
+}
+
+.top-courses-view-all {
+  padding: 12px 40px;
+  border: 2px solid #6600CC;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #6600CC;
+  transition: all 0.3s ease;
+}
+
+.top-courses-view-all:hover {
+  background-color: #6600CC;
+  color: white;
+}
+
+/* Swiper styling */
+.top-courses-swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  background: #bfbfbf;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6a0dad;
+}
+
+/* Responsive: adjust cards per row */
+@media (max-width: 1280px) {
+  .top-courses-swiper .swiper-slide {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .top-courses-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .top-courses-view-all {
+    margin-top: 12px;
+  }
+  .swiper {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    --swiper-pagination-bottom: 10px;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+}

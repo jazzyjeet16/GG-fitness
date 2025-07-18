@@ -1,0 +1,50 @@
+.viewslots-container {
+  max-width: 72rem; /* Tailwind max-w-6xl */
+  margin: 0 auto; /* mx-auto */
+  padding: 1.5rem 1rem; /* px-4 py-6 */
+  transition: all 0.2s ease;
+  overflow-x: hidden; 
+}
+
+.viewslots-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;   /* font-bold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.viewslots-badge {
+  margin-left: 0.5rem; /* ml-2 */
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  background-color: #FFF0BD;
+  color: #0D0D0D;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;   /* font-medium */
+  border-radius: 0.25rem; /* rounded */
+}
+
+.viewslots-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .viewslots-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .viewslots-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .viewslots-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
